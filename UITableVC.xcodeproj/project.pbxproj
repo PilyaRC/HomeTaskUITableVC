@@ -15,7 +15,6 @@
 		043C41362639E573004E3EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C41342639E573004E3EFE /* LaunchScreen.storyboard */; };
 		043C413E2639FA9F004E3EFE /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C413D2639FA9F004E3EFE /* SettingsTableViewCell.swift */; };
 		043C4140263C39C1004E3EFE /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C413F263C39C1004E3EFE /* SwitchTableViewCell.swift */; };
-		043C4142263C698B004E3EFE /* VariableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043C4141263C698B004E3EFE /* VariableTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		043C41372639E573004E3EFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043C413D2639FA9F004E3EFE /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		043C413F263C39C1004E3EFE /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
-		043C4141263C698B004E3EFE /* VariableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +60,65 @@
 		043C41282639E570004E3EFE /* UITableVC */ = {
 			isa = PBXGroup;
 			children = (
-				043C41292639E570004E3EFE /* AppDelegate.swift */,
-				043C412B2639E570004E3EFE /* SceneDelegate.swift */,
-				043C412D2639E570004E3EFE /* ViewController.swift */,
-				043C412F2639E570004E3EFE /* Main.storyboard */,
-				043C41322639E573004E3EFE /* Assets.xcassets */,
-				043C41342639E573004E3EFE /* LaunchScreen.storyboard */,
-				043C41372639E573004E3EFE /* Info.plist */,
-				043C413D2639FA9F004E3EFE /* SettingsTableViewCell.swift */,
-				043C413F263C39C1004E3EFE /* SwitchTableViewCell.swift */,
-				043C4141263C698B004E3EFE /* VariableTableViewCell.swift */,
+				043C4143263E41DD004E3EFE /* Resources */,
+				043C4146263E4301004E3EFE /* Sources */,
 			);
 			path = UITableVC;
+			sourceTree = "<group>";
+		};
+		043C4143263E41DD004E3EFE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				043C4144263E423D004E3EFE /* Configs */,
+				043C4145263E4268004E3EFE /* Storyboards */,
+				043C41322639E573004E3EFE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		043C4144263E423D004E3EFE /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				043C41372639E573004E3EFE /* Info.plist */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		043C4145263E4268004E3EFE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				043C412F2639E570004E3EFE /* Main.storyboard */,
+				043C41342639E573004E3EFE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		043C4146263E4301004E3EFE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				043C4147263E4316004E3EFE /* App */,
+				043C4148263E4320004E3EFE /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		043C4147263E4316004E3EFE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				043C412B2639E570004E3EFE /* SceneDelegate.swift */,
+				043C41292639E570004E3EFE /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		043C4148263E4320004E3EFE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				043C412D2639E570004E3EFE /* ViewController.swift */,
+				043C413D2639FA9F004E3EFE /* SettingsTableViewCell.swift */,
+				043C413F263C39C1004E3EFE /* SwitchTableViewCell.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +192,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				043C412E2639E570004E3EFE /* ViewController.swift in Sources */,
-				043C4142263C698B004E3EFE /* VariableTableViewCell.swift in Sources */,
 				043C412A2639E570004E3EFE /* AppDelegate.swift in Sources */,
 				043C4140263C39C1004E3EFE /* SwitchTableViewCell.swift in Sources */,
 				043C413E2639FA9F004E3EFE /* SettingsTableViewCell.swift in Sources */,
@@ -300,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7P2SB49N;
-				INFOPLIST_FILE = UITableVC/Info.plist;
+				INFOPLIST_FILE = UITableVC/Resources/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG7P2SB49N;
-				INFOPLIST_FILE = UITableVC/Info.plist;
+				INFOPLIST_FILE = UITableVC/Resources/Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
