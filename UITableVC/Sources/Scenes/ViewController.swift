@@ -109,10 +109,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         ]))
     }
 
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        let section = models[section]
-//        return section.title
-//    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return models.count
